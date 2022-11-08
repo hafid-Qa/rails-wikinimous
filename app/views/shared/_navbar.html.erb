@@ -10,7 +10,7 @@
       <ul class="navbar-nav me-auto">
         <%# if user_signed_in? %>
         <li class="nav-item">
-          <%= link_to "Write an article", "#", class: "nav-link btn btn-ghost" %>
+          <%= link_to "Write an article", new_article_path, class: "nav-link btn btn-ghost" %>
         </li>
         <%# else %>
         <!--li class="nav-item"-->
