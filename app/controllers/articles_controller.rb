@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  before_action :set_article, only: %w[show]
+  before_action :set_article, only: %w[show edit update]
   # read all
   def index
     @articles = Article.all
@@ -24,13 +24,14 @@ class ArticlesController < ApplicationController
     end
   end
 
-  # def update
-  #   @ = .find(params[:id])
-  # end
+  # Edit an article
+  def edit; end
 
-  # def edit
-  #   @ = .find(params[:id])
-  # end
+  def update
+    @article.update(article_params)
+    redirect_to root_path(@article)
+  end
+  # Edit an article
 
   # def destroy
   #    = .find(params[:id])
