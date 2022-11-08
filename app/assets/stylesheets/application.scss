@@ -14,3 +14,7 @@
  *= require_self
  */
 @import "./components/cards.scss";
+@import "./components/navbar.scss";
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+}
